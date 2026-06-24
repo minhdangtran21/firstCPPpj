@@ -3,16 +3,16 @@ using namespace std;
 int solve(int a, int b, int c)
 {
     int maxhoa = c/a;
-    int tien = 0, imax = 0;
+    int tienabc = 0, imax = 0;
     for (int i = 0; i <= maxhoa;++i)
     {
         for (int j = maxhoa; j >= 0; --j)
         {
             if (i + j <= maxhoa && i * a + j *b <= c)
             {
-                tien = i*a + j*b;
-                if (tien > imax)
-                imax = tien;
+                tienabc = i*a + j*b;
+                if (tienabc > imax)
+                imax = tienabc;
             }
         }
     }

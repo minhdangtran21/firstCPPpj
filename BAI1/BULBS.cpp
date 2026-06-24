@@ -18,7 +18,7 @@ void solve(int n)
 }
 int main()
 {
-    ios::sync_with_stdio(false);
+    ios::sync_with_stdio(true);
     cin.tie(nullptr);
     freopen("BULBS.INP","r", stdin);
     freopen("BULBS.OUT","w", stdout);
